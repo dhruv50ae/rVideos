@@ -5,10 +5,10 @@ export default class SearchBar extends Component {
   onInputChange = (e) => {
     this.setState({ term: e.target.value });
   };
-  onFormSubmit(e) {
+  onFormSubmit = (e) => {
     e.preventDefault();
     this.props.onFormSubmit(this.state.term);
-  }
+  };
   render() {
     return (
       <div className="search-bar ui segment">
