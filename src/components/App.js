@@ -16,7 +16,6 @@ export default class App extends Component {
       <div className="ui container">
         <SearchBar onFormSubmit={this.onTermSubmit} />
         <VideoList videos={this.state.videos} />
-        {this.state.videos.length} videos fetched
       </div>
     );
   }
